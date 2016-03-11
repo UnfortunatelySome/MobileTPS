@@ -8,6 +8,7 @@ public class AimController : MonoBehaviour {
 	public float direction;
 	public bool shooting;
 	public float shootThreshold;
+	public GameObject weapon;
 	// Use this for initialization
 	void Start () {
 	
@@ -26,5 +27,7 @@ public class AimController : MonoBehaviour {
 		if (upAim < 0) {
 			direction = -direction;
 		}
+		direction = -direction;
+		weapon.transform.localEulerAngles = new Vector3 (weapon.transform.localEulerAngles.x, weapon.transform.localEulerAngles.y, direction);
 	}
 }

@@ -47,7 +47,6 @@
   <ItemGroup>
      <Compile Include="Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
      <Compile Include="Assets\PixelCamera2D\Scripts\Editor\PixelCamera2DEditor.cs" />
-     <Compile Include="Assets\Standalone Multi-Touch Input Module\Editor\SMTIMEditor.cs" />
      <None Include="Assets\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
      <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />

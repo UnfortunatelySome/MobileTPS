@@ -50,7 +50,7 @@
      <Compile Include="Assets\Main\Scripts\PlayerController.cs" />
      <Compile Include="Assets\PixelCamera2D\Scripts\PixelCamera2D.cs" />
      <Compile Include="Assets\PixelCamera2D\Scripts\PixelCamera2DBehaviour.cs" />
-     <Compile Include="Assets\Standalone Multi-Touch Input Module\Scripts\StandaloneMultiTouchInputModule.cs" />
+     <Compile Include="Assets\Weapon.cs" />
      <None Include="Assets\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
      <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
