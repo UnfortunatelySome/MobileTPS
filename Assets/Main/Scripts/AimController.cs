@@ -29,5 +29,10 @@ public class AimController : MonoBehaviour {
 		}
 		direction = -direction;
 		weapon.transform.localEulerAngles = new Vector3 (weapon.transform.localEulerAngles.x, weapon.transform.localEulerAngles.y, direction);
+		if (shooting) {
+			weapon.GetComponent<Weapon> ().isFiring = true;
+		} else {
+			weapon.GetComponent<Weapon> ().isFiring = false;
+		}
 	}
 }

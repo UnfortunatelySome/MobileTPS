@@ -48,12 +48,17 @@
      <Compile Include="Assets\Main\Scripts\AimController.cs" />
      <Compile Include="Assets\Main\Scripts\AimManager.cs" />
      <Compile Include="Assets\Main\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Main\Scripts\Weapon.cs" />
+     <Compile Include="Assets\Main\Sprites\BulletInfo.cs" />
      <Compile Include="Assets\PixelCamera2D\Scripts\PixelCamera2D.cs" />
      <Compile Include="Assets\PixelCamera2D\Scripts\PixelCamera2DBehaviour.cs" />
-     <Compile Include="Assets\Weapon.cs" />
      <None Include="Assets\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
+     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+     <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
      <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
