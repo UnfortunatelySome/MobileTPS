@@ -47,9 +47,10 @@
   <ItemGroup>
      <Compile Include="Assets\Main\Scripts\AimController.cs" />
      <Compile Include="Assets\Main\Scripts\AimManager.cs" />
+     <Compile Include="Assets\Main\Scripts\BulletInfo.cs" />
+     <Compile Include="Assets\Main\Scripts\Health.cs" />
      <Compile Include="Assets\Main\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Main\Scripts\Weapon.cs" />
-     <Compile Include="Assets\Main\Sprites\BulletInfo.cs" />
      <Compile Include="Assets\PixelCamera2D\Scripts\PixelCamera2D.cs" />
      <Compile Include="Assets\PixelCamera2D\Scripts\PixelCamera2DBehaviour.cs" />
      <None Include="Assets\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />

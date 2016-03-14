@@ -94,9 +94,10 @@
 -define:ENABLE_IOS_APP_SLICING
 'Assets/Main/Scripts/AimController.cs'
 'Assets/Main/Scripts/AimManager.cs'
+'Assets/Main/Scripts/BulletInfo.cs'
+'Assets/Main/Scripts/Health.cs'
 'Assets/Main/Scripts/PlayerController.cs'
 'Assets/Main/Scripts/Weapon.cs'
-'Assets/Main/Sprites/BulletInfo.cs'
 'Assets/PixelCamera2D/Scripts/PixelCamera2D.cs'
 'Assets/PixelCamera2D/Scripts/PixelCamera2DBehaviour.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'

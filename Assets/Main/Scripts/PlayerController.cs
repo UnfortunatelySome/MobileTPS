@@ -11,10 +11,12 @@ public class PlayerController : MonoBehaviour {
 	public float moveSpeed;
 	public float verticalSpeed;
 	public float upDownThreshold;
+	public Transform feet;
 	void Update () {
 		up = CrossPlatformInputManager.GetAxis ("Vertical");
 		right = CrossPlatformInputManager.GetAxis ("Horizontal");
 		transform.Translate (Vector3.right * moveSpeed * right);
+		isGrounded ();
 		if (up >= upDownThreshold && grounded == true&&canJump) {
 			gameObject.GetComponent<Rigidbody2D> ().AddForce (Vector2.up * verticalSpeed);
 		}
@@ -29,7 +31,7 @@ public class PlayerController : MonoBehaviour {
 			grounded  = false;
 		}*/
 	}
-	void OnCollisionExit2D(Collision2D col){
+	/**void OnCollisionExit2D(Collision2D col){
 		if (col.collider.tag == "Platform") {
 			grounded = false;
 		}
@@ -42,6 +44,14 @@ public class PlayerController : MonoBehaviour {
 	void OnCollisionStay2D(Collision2D col){
 		if (col.collider.tag == "Platform") {
 			grounded = true;
+		}
+	}**/
+	void isGrounded(){
+		RaycastHit2D hit = Physics2D.Raycast (feet.position, Vector2.down, 0.2f);
+		if (hit.collider.gameObject.tag == "Platform") {
+			grounded = true;
+		} else {
+			grounded = false;
 		}
 	}
 }

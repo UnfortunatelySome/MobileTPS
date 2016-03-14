@@ -1,12 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Weapon.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Health.cs">
     <Files>
       <File FileName="Assets/Standard Assets/CrossPlatformInput/Scripts/MobileControlRig.cs" Line="1" Column="1" />
       <File FileName="Assets/Standard Assets/CrossPlatformInput/Scripts/PlatformSpecific/StandaloneInput.cs" Line="1" Column="1" />
       <File FileName="Assets/Main/Scripts/PlayerController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Main/Scripts/AimController.cs" Line="31" Column="95" />
-      <File FileName="Assets/Weapon.cs" Line="25" Column="27" />
+      <File FileName="Assets/Main/Scripts/AimController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Main/Scripts/Weapon.cs" Line="1" Column="1" />
+      <File FileName="Assets/Health.cs" Line="12" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
