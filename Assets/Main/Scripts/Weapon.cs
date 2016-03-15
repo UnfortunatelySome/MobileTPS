@@ -9,9 +9,6 @@ public class Weapon : MonoBehaviour {
 	public float recoil;
 	public float accuracy;
 	public float bulletSpeed;
-	public float reloadTime;
-	public float magSize;
-	public float bulletsLoaded;
 	public Transform shotPosition;
 	public float timeSinceLastShot = 0;
 	public float timeOfLastShot = 0;
@@ -33,7 +30,5 @@ public class Weapon : MonoBehaviour {
 		Rigidbody2D bullet;
 		bullet = Rigidbody2D.Instantiate (projectile, shotPosition.position, shotPosition.rotation) as Rigidbody2D;
 		bullet.AddForce (shotPosition.up * bulletSpeed);
-		int team = gameObject.GetComponentInParent<Health> ().team;
-		bullet.gameObject.GetComponent<BulletInfo> ().team = team;
 	}
 }
