@@ -92,9 +92,10 @@
 -define:MOBILE_INPUT
 -define:ENABLE_IOS_ON_DEMAND_RESOURCES
 -define:ENABLE_IOS_APP_SLICING
-'Assets/Main/Health.cs'
 'Assets/Main/Scripts/AimController.cs'
 'Assets/Main/Scripts/AimManager.cs'
+'Assets/Main/Scripts/BulletInfo.cs'
+'Assets/Main/Scripts/Health.cs'
 'Assets/Main/Scripts/PlayerController.cs'
 'Assets/Main/Scripts/Weapon.cs'
 'Assets/Main/Sprites/BulletInfo.cs'
