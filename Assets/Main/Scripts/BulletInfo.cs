@@ -12,6 +12,9 @@ public class BulletInfo : MonoBehaviour {
 			if (hit.team != this.team) {
 				hit.doDamage (this.damage);
 			}
+			if (hit.solid) {
+				Destroy (gameObject, 0.1f);
+			}
 		}
 	}
 }

@@ -30,5 +30,6 @@ public class Weapon : MonoBehaviour {
 		Rigidbody2D bullet;
 		bullet = Rigidbody2D.Instantiate (projectile, shotPosition.position, shotPosition.rotation) as Rigidbody2D;
 		bullet.AddForce (shotPosition.up * bulletSpeed);
+		bullet.gameObject.GetComponent<BulletInfo> ().team = gameObject.GetComponentInParent<Health> ().team;
 	}
 }
