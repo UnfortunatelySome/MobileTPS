@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour {
 		right = CrossPlatformInputManager.GetAxis ("Horizontal");
 		transform.Translate (Vector3.right * moveSpeed * right);
 		isGrounded ();
-		if (up >= upDownThreshold && grounded == true&&canJump) {
+		if (up >= upDownThreshold && grounded == true &&canJump) {
 			gameObject.GetComponent<Rigidbody2D> ().AddForce (Vector2.up * verticalSpeed);
 		}
 		/**RaycastHit hit;
@@ -31,12 +31,23 @@ public class PlayerController : MonoBehaviour {
 			grounded  = false;
 		}*/
 	}
-	void isGrounded(){
-		RaycastHit2D hit = Physics2D.Raycast (feet.position, Vector2.down, 0.2f);
-		if (hit.collider.gameObject.tag == "Platform") {
+
+	void OnTriggerEnter2D(Collider2D col){
+		if (col.gameObject.tag.Equals("Platform")) {
 			grounded = true;
 		} else {
 			grounded = false;
 		}
 	}
+	void isGrounded(){
+		//hit.collider.gameObject.tag.Equals ("Platform")
+
+	//	RaycastHit2D hit = Physics2D.Raycast (feet.position, Vector2.down, 0.2f);
+	//	if (GameObject.) {
+	//		grounded = true;
+	//	} else {
+	//		grounded = false;
+	//	}
+	// }
+}
 }
