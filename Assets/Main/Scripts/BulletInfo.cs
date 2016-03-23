@@ -10,10 +10,10 @@ public class BulletInfo : MonoBehaviour {
 		if (col.gameObject.GetComponent<Health>() != null) {
 			Health hit = col.gameObject.GetComponent<Health> ();
 			if (hit.team != this.team) {
-				hit.doDamage (this.damage);
+				hit.health -= damage;
 			}
 			if (hit.solid) {
-				Destroy (gameObject, 0.1f);
+				Destroy (gameObject,0.1f);
 			}
 		}
 	}
