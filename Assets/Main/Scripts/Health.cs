@@ -32,6 +32,12 @@ public class Health : MonoBehaviour {
 		catchedY = healthPlayer.position.y;
 		catchedZ = healthPlayer.position.z;
 		catchedX = healthPlayer.position.x;
+		//float bruh = greenBar.transform.position;
+		//float bro = healthPlayer.localScale;
+
+		//if () {
+		//	print("Bruh");
+		//}
 		
 		changeX = maxHealth - health;
 
