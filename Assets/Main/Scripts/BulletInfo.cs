@@ -11,9 +11,9 @@ public class BulletInfo : MonoBehaviour {
 			Health hit = col.gameObject.GetComponent<Health> ();
 			if (hit.team != this.team) {
 				hit.doDamage (this.damage);
-			}
-			if (hit.solid) {
-				Destroy (gameObject, 0.1f);
+				if (hit.solid) {
+					Destroy (gameObject, 0.1f);
+				}
 			}
 		}
 	}
