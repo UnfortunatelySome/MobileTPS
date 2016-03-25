@@ -14,16 +14,16 @@ public class PlayerController : MonoBehaviour {
 		float speed;
 		up = CrossPlatformInputManager.GetAxis ("Vertical");
 		right = CrossPlatformInputManager.GetAxis ("Horizontal");
-<<<<<<< HEAD
+
 		direction = Vector2.Angle (new Vector2 (0,1), new Vector2 (right, up));
 		if (Mathf.Pow (up, 2) + Mathf.Pow (right, 2)>=moveThreshold) {
 			moving = true;
-=======
+
 		transform.Translate (Vector3.right * moveSpeed * right);
 		isGrounded ();
-		if (up >= upDownThreshold && grounded == true &&canJump) {
-			gameObject.GetComponent<Rigidbody2D> ().AddForce (Vector2.up * verticalSpeed);
-		}
+		//if (up >= upDownThreshold && grounded == true && canJump) {
+		//	gameObject.GetComponent<Rigidbody2D> ().AddForce (Vector2.up * verticalSpeed);
+		//}
 		/**RaycastHit hit;
 		if (Physics.Raycast (gameObject.transform.position, -Vector3.up, out hit, 1.5f)) {
 			if (hit.collider.gameObject.tag == "Platform") {
@@ -35,11 +35,12 @@ public class PlayerController : MonoBehaviour {
 			grounded  = false;
 		}*/
 	}
+	}
 
 	void OnTriggerEnter2D(Collider2D col){
 		if (col.gameObject.tag.Equals("Platform")) {
-			grounded = true;
->>>>>>> origin/master
+			//grounded = true;
+
 		} else {
 			moving = false;
 		}
@@ -49,7 +50,7 @@ public class PlayerController : MonoBehaviour {
 		direction = -direction;
 		if (moving) {
 			playerBody.transform.localEulerAngles = new Vector3 (playerBody.transform.localEulerAngles.x, playerBody.transform.localEulerAngles.y, direction);
-			speed = Mathf.Pow (up, 2) + Mathf.Pow (right, 2);
+			//speed = Mathf.Pow (up, 2) + Mathf.Pow (right, 2);
 			transform.Translate (moveSpeed * new Vector2 (right, up));
 		}
 	}
